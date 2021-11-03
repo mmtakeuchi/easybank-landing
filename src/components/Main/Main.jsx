@@ -1,5 +1,6 @@
 import React from "react";
 import "./Main.scss";
+import Features from "../Features/Features";
 import mockups from "../../assets/images/image-mockups.png";
 
 const Main = () => {
@@ -20,30 +21,8 @@ const Main = () => {
             <img src={mockups} alt="mockup images" className="mockupImg" />
           </div>
         </div>
-        <div className="featureContainer">
-          Why choose Easybank? We leverage Open Banking to turn your bank
-          account into your financial hub. Control your finances like never
-          before.
-          <ul className="featuresList">
-            <li>
-              Online Banking Our modern web and mobile applications allow you to
-              keep track of your finances wherever you are in the world.
-            </li>
-            <li>
-              Simple Budgeting See exactly where your money goes each month.
-              Receive notifications when you’re close to hitting your limits.
-            </li>
-            <li>
-              Fast Onboarding We don’t do branches. Open your account in minutes
-              online and start taking control of your finances right away.
-            </li>
-            <li>
-              Open API Manage your savings, investments, pension, and much more
-              from one account. Tracking your money has never been easier.
-            </li>
-          </ul>
-        </div>
       </div>
+      <Features />
       <div className="articlesContainer">
         Latest Articles
         <ul>
