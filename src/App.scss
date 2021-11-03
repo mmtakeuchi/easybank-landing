@@ -3,12 +3,15 @@
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
   width: 100%;
   font-family: $fontFamily;
   font-size: $size;
+
+  .test {
+    background: black;
+    flex: 1;
+  }
 }
 
 .App-header {

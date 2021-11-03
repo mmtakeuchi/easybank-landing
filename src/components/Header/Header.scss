@@ -1,0 +1,57 @@
+@import "../../styles/variables";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  padding: 1em 3em 0.75em;
+  font-size: 0.9rem;
+
+  .headerLinks {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: $grayishBlue;
+
+    li {
+      cursor: pointer;
+      margin: 0 0.75em;
+      display: inline-block;
+      position: relative;
+    }
+
+    li:hover {
+      color: $darkBlue;
+    }
+
+    li:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      top: 2.5em;
+      left: 0;
+      color: $darkBlue;
+      background: linear-gradient(to right, $limeGreen, $brightCyan);
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    li:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+
+  .inviteBtn {
+    cursor: pointer;
+    background: linear-gradient(to right, $limeGreen, $brightCyan);
+    border-radius: 3em;
+    padding: 0.75em 1.75em;
+    color: $white;
+  }
+}
