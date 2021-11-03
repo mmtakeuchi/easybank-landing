@@ -1,12 +1,14 @@
 import "./App.scss";
 import Header from "./components/Header/Header";
-import Attribution from "./components/Attribution/Attribution";
+import Main from "./components/Main/Main";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Attribution />
+      <Main />
+      <Footer />
     </div>
   );
 }
