@@ -13,7 +13,7 @@ const Header = () => {
         <li>Blog</li>
         <li>Careers</li>
       </ul>
-      <span className="inviteBtn">Request Invite</span>
+      <button className="inviteBtn">Request Invite</button>
     </header>
   );
 };

@@ -1,14 +1,24 @@
 import React from "react";
 import "./Main.scss";
+import mockups from "../../assets/images/image-mockups.png";
 
 const Main = () => {
   return (
-    <div>
+    <div className="mainContainer">
       <div className="introContainer">
         <div className="introSection">
-          Next generation digital banking Take your financial life online. Your
-          Easybank account will be a one-stop-shop for spending, saving,
-          budgeting, investing, and much more. Request Invite
+          <div className="introText">
+            <h1>Next generation digital banking</h1>
+            <p>
+              Take your financial life online. Your Easybank account will be a
+              one-stop-shop for spending, saving, budgeting, investing, and much
+              more.
+            </p>
+            <button>Request Invite</button>
+          </div>
+          <div className="mockups">
+            <img src={mockups} alt="mockup images" className="mockupImg" />
+          </div>
         </div>
         <div className="featureContainer">
           Why choose Easybank? We leverage Open Banking to turn your bank

@@ -1,0 +1,51 @@
+@import "../../styles/variables";
+
+.mainContainer {
+  padding: 1em 0 1em 3.5em;
+  color: $grayishBlue;
+
+  .introContainer {
+    .introSection {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .introText {
+        width: 43%;
+        padding: 0 1em;
+
+        h1 {
+          color: $darkBlue;
+          font-size: 3rem;
+          font-weight: $weight400;
+          margin-top: 0;
+        }
+
+        button {
+          cursor: pointer;
+          border: none;
+          background: linear-gradient(to right, $limeGreen, $brightCyan);
+          border-radius: 3em;
+          padding: 0.75em 1.75em;
+          color: $white;
+        }
+      }
+
+      .mockups {
+        flex: 1;
+        background-image: url("../../assets/images/bg-intro-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top 500px;
+
+        .mockupImg {
+          //   background-image: url("../../assets/images/image-mockups.png");
+          max-height: 30em;
+          position: relative;
+          right: 0;
+        }
+      }
+    }
+  }
+}
