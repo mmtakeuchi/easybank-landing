@@ -3,6 +3,7 @@ import "./Main.scss";
 import Features from "../Features/Features";
 import Articles from "../Articles/Articles";
 import mockups from "../../assets/images/image-mockups.png";
+import bg from "../../assets/images/bg-intro-desktop.svg";
 
 const Main = () => {
   return (
@@ -19,11 +20,12 @@ const Main = () => {
             <button>Request Invite</button>
           </div>
           <div className="mockups">
+            <img src={bg} alt="background" className="background" />
             <img src={mockups} alt="mockup images" className="mockupImg" />
           </div>
         </div>
+        <Features />
       </div>
-      <Features />
       <Articles />
     </div>
   );

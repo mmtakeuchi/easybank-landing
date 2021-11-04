@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.scss";
 import logo from "../../assets/images/logo.svg";
+import hamburger from "../../assets/images/icon-hamburger.svg";
 
 const Header = () => {
   return (
@@ -14,6 +15,8 @@ const Header = () => {
         <li>Careers</li>
       </ul>
       <button className="inviteBtn">Request Invite</button>
+
+      <img src={hamburger} alt="hamburger" className="hamburger" />
     </header>
   );
 };

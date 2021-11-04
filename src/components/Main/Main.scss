@@ -5,10 +5,12 @@
 
   .introContainer {
     .introSection {
-      padding: 1em 0 1em 4em;
+      padding: 1em 5em 1em 2em;
       display: flex;
       justify-content: center;
       align-items: center;
+      background: $veryLightGray;
+      overflow: hidden;
 
       .introText {
         width: 43%;
@@ -32,17 +34,73 @@
       }
 
       .mockups {
-        flex: 1;
-        background-image: url("../../assets/images/bg-intro-desktop.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top 500px;
+        .background {
+          width: 80em;
+          height: 47em;
+          position: absolute;
+          right: -600px;
+          top: 60px;
+          z-index: 0;
+        }
 
         .mockupImg {
-          //   background-image: url("../../assets/images/image-mockups.png");
-          max-height: 30em;
+          // background-image: url("../../assets/images/bg-intro-desktop.svg");
+          // background-repeat: no-repeat;
+          // background-size: auto;
+          // max-height: 40em;
+          width: 33em;
+          height: 41em;
           position: relative;
-          right: 0;
+          right: -175px;
+          top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .mainContainer {
+    .introContainer {
+      font-size: 1rem;
+      .introSection {
+        padding: 0.5em 1.75em;
+        flex-direction: column-reverse;
+
+        .introText {
+          width: 100%;
+          text-align: center;
+
+          h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.375em;
+          }
+
+          p {
+            font-size: 0.9em;
+          }
+
+          button {
+            margin: 1.5em 0 3em;
+          }
+        }
+
+        .mockups {
+          height: 30vh;
+          .background {
+            display: none;
+            width: 20em;
+            height: 20em;
+            right: 0px;
+            top: -110px;
+          }
+
+          .mockupImg {
+            width: 20em;
+            height: 22em;
+            right: 0px;
+            top: -110px;
+          }
         }
       }
     }

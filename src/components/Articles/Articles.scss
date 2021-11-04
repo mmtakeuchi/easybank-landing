@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 
 .articlesContainer {
-  padding: 1.5em 5em;
+  padding: 1.5em 8em;
   background: $veryLightGray;
 
   .title {
@@ -22,12 +22,13 @@
     width: 100%;
 
     .article {
-      flex: 1;
+      flex: 25%;
       flex-basis: 200px;
       background: $white;
       text-align: left;
       margin-top: 1em;
       margin-bottom: 1em;
+      font-weight: $weight300;
 
       .articleDetails {
         padding: 0.5em 1.5em 0.25em;
@@ -37,10 +38,11 @@
           cursor: pointer;
           color: $darkBlue;
           font-size: 1.2rem;
+          font-weight: $weight300;
         }
 
         .articleTitle:hover {
-          color: $limeGreen;
+          color: $brightCyan;
         }
       }
 

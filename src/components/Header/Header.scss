@@ -5,12 +5,12 @@
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  padding: 1em 5.5em 0.75em;
+  padding: 1em 11em 0.75em 11em;
   font-size: 0.9rem;
 
   .headerLinks {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -32,8 +32,8 @@
       position: absolute;
       width: 100%;
       transform: scaleX(0);
-      height: 2px;
-      top: 2.5em;
+      height: 3px;
+      top: 2.25em;
       left: 0;
       color: $darkBlue;
       background: linear-gradient(to right, $limeGreen, $brightCyan);
@@ -54,5 +54,27 @@
     border-radius: 3em;
     padding: 0.75em 1.75em;
     color: $white;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    padding: 1em;
+
+    .headerLinks {
+      display: none;
+    }
+
+    .inviteBtn {
+      display: none;
+    }
+
+    .hamburger {
+      display: block;
+    }
   }
 }
