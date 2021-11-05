@@ -52,3 +52,43 @@
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  .featureContainer {
+    padding: 0.5em 2.25em;
+    text-align: center;
+    font-size: 0.75rem;
+
+    .featureHeader {
+      width: 100%;
+      margin-bottom: 1.5em;
+
+      .title {
+        line-height: 1.15em;
+      }
+    }
+
+    .featuresList {
+      flex-direction: column;
+      margin-bottom: 2em;
+
+      .feature {
+        flex: 100%;
+        align-items: center;
+        margin: 1em 0;
+
+        .featureText {
+          h2 {
+            margin-bottom: 1em;
+            font-size: 1.25rem;
+          }
+        }
+
+        .icon {
+          width: 5em;
+          margin: 0.25em 0;
+        }
+      }
+    }
+  }
+}
