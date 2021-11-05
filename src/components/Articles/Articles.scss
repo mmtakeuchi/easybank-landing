@@ -57,3 +57,55 @@
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  .articlesContainer {
+    padding: 1em 1.5em;
+    text-align: center;
+
+    .title {
+      margin-top: 1.5em;
+      margin-bottom: 0.25em;
+    }
+
+    .articleList {
+      flex-direction: column;
+
+      .article {
+        width: 100%;
+
+        .articleDetails {
+          padding: 0.5em 2em;
+          font-size: 0.8rem;
+          margin-bottom: 1.5em;
+          font-weight: $weight400;
+
+          .author {
+            margin-bottom: 0;
+          }
+
+          .articleTitle {
+            cursor: pointer;
+            color: $darkBlue;
+            font-size: 1.1rem;
+            font-weight: $weight400;
+            margin: 0.75em 0;
+          }
+
+          .articleTitle:hover {
+            color: $brightCyan;
+          }
+        }
+
+        img {
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+        }
+      }
+
+      .article:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+}
